@@ -1,6 +1,6 @@
 
 FROM fedora:28
-ENV CAKE_VERSION 0.30.0
+ENV CAKE_VERSION 0.33.0
 ENV CAKE_SETTINGS_SKIPVERIFICATION true
 ADD cakeprimer cakeprimer
 ADD cake /usr/bin/cake
