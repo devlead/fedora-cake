@@ -13,7 +13,7 @@ RUN rpm --import "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3FA7E0
     && curl -s https://packages.microsoft.com/config/fedora/27/prod.repo | tee /etc/yum.repos.d/microsoft-prod.repo \
     && chown root:root /etc/yum.repos.d/microsoft-prod.repo \
     && dnf update -y \
-	&& dnf install -y mono-complete dotnet-sdk-2.1 \
+	&& dnf install -y mono-complete dotnet-sdk-2.1 findutils \
 	&& dnf clean all  \
     && mkdir -p /opt/nuget \
     && curl -Lsfo /opt/nuget/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
